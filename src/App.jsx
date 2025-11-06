@@ -1,33 +1,55 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import grizzBear1 from './assets/grizzBear1.avif'
+import grizzBear2 from './assets/grizzBear2.jpg'
+import blackBear1 from './assets/blackBear1.jpeg'
+import blackBear2 from './assets/blackBear2.webp'
+import polarBear1 from './assets/polarBear1.jpg'
+import polarBear2 from './assets/polarBear2.webp'
+import andeanBear1 from './assets/andeanBear1.jpg'
+import andeanBear2 from './assets/andeanBear2.jpg'
+import slothBear1 from './assets/slothBear1.avif'
+import slothBear2 from './assets/slothBear2.jpg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showGrizz, setGrizzMessage] = useState(false);
+  const [showBlack, setBlackMessage] = useState(false);
+  const [showPolar, setPolarMessage] = useState(false);
+  const [showAndean, setAndeanMessage] = useState(false);
+  const [showSloth, setSlothMessage] = useState(false);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+      <h1>Bear Gallery!</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => setGrizzMessage(!showGrizz)}>
+          Brown Bear
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button onClick={() => setBlackMessage(!showBlack)}>
+            Black Bear
+        </button>
+        <button onClick={() => setPolarMessage(!showPolar)}>
+            Polar Bear
+        </button>
+        <button onClick={() => setAndeanMessage(!showAndean)}>
+            Andean Bear
+        </button>
+        <button onClick={() => setSlothMessage(!showSloth)}>
+            Sloth Bear
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <div>
+            {showGrizz && (<img src={grizzBear1} alt="Grizzly Bear holding fish" className="vert"/>)}
+            {showGrizz && (<img src={grizzBear2} alt="Grizzly bear sleeping"/>)}
+            {showBlack && (<img src={blackBear1} alt="Black bear in forest"/>)}
+            {showBlack && (<img src={blackBear2} alt="Black bear next to river"/>)}
+            {showPolar && (<img src={polarBear1} alt="Polar bear in snow"/>)}
+            {showPolar && (<img src={polarBear2} alt="Polar bear waving"/>)}
+            {showAndean && (<img src={andeanBear1} alt="Andean bear cubs"/>)}
+            {showAndean && (<img src={andeanBear2} alt="Andean bear eating apple"/>)}
+            {showSloth && (<img src={slothBear1} alt="Sloth bear standing" className="vert"/>)}
+            {showSloth && (<img src={slothBear2} alt="Sloth bear in forest"/>)}
+        </div>
     </>
   )
 }

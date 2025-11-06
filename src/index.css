@@ -35,6 +35,15 @@ h1 {
   line-height: 1.1;
 }
 
+img {
+    max-width: 50%;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+img.vert{
+    max-width: 25%;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -45,6 +54,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
 }
 button:hover {
   border-color: #646cff;
