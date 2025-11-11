@@ -9,6 +9,10 @@ import andeanBear1 from './assets/andeanBear1.jpg'
 import andeanBear2 from './assets/andeanBear2.jpg'
 import slothBear1 from './assets/slothBear1.avif'
 import slothBear2 from './assets/slothBear2.jpg'
+import koala1 from './assets/koala1.jpg'
+import koala2 from './assets/koalaOnTree.jpg'
+import tardigrade1 from './assets/tardigrade.jpg'
+import tardigrade2 from './assets/tardigrade1.jpg'
 import './App.css'
 
 function App() {
@@ -17,6 +21,8 @@ function App() {
   const [showPolar, setPolarMessage] = useState(false);
   const [showAndean, setAndeanMessage] = useState(false);
   const [showSloth, setSlothMessage] = useState(false);
+  const [showKoala, setKoalaMessage] = useState(false);
+  const [showTardigrade, setTardigradeMessage] = useState(false);
 
   return (
     <>
@@ -49,6 +55,21 @@ function App() {
             {showAndean && (<img src={andeanBear2} alt="Andean bear eating apple"/>)}
             {showSloth && (<img src={slothBear1} alt="Sloth bear standing" className="vert"/>)}
             {showSloth && (<img src={slothBear2} alt="Sloth bear in forest"/>)}
+        </div>
+        <h1>"Bear" Gallery</h1>
+        <div>
+        <button onClick={() => setKoalaMessage(!showKoala)}>
+            Koala
+        </button>
+        <button onClick={() => setTardigradeMessage(!showTardigrade)}>
+            Tardigrade
+        </button>
+        </div>
+        <div>
+            {showKoala && (<img src={koala1} alt="Koala on tree" className="vert"/>)}
+            {showKoala && (<img src={koala2} alt="Koala looking left of camera"/>)}
+            {showTardigrade && (<img src={tardigrade1} alt="Tardigre bear"/>)}
+            {showTardigrade && (<img src={tardigrade2} alt="Tardigre bear"/>)}
         </div>
     </>
   )
