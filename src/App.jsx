@@ -27,8 +27,8 @@ function App() {
                 <StyledLink to={"/gallery"}>Gallery</StyledLink>
             </nav>
             <Routes>
-                <Route exact path="/" element={<Home />} >Home</Route>
-                <Route exact parh="/gallery" element={<Gallery />} />
+                <Route exact path="/react25/" element={<Home />} >Home</Route>
+                <Route exact parh="/react25/gallery" element={<Gallery />} />
             </Routes>
         </BrowserRouter>
 
