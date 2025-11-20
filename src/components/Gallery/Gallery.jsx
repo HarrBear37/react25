@@ -1,21 +1,7 @@
 import { useState } from "react";
-import '../../App.css'
-import grizzBear1 from '../assets/grizzBear1.avif'
-import grizzBear2 from '../assets/grizzBear2.jpg'
-import blackBear1 from '../assets/blackBear1.jpeg'
-import blackBear2 from '../assets/blackBear2.webp'
-import polarBear1 from '../assets/polarBear1.jpg'
-import polarBear2 from '../assets/polarBear2.webp'
-import andeanBear1 from '../assets/andeanBear1.jpg'
-import andeanBear2 from '../assets/andeanBear2.jpg'
-import slothBear1 from '../assets/slothBear1.avif'
-import slothBear2 from '../assets/slothBear2.jpg'
-import koala1 from '../assets/koala1.jpg'
-import koala2 from '../assets/koalaOnTree.jpg'
-import tardigrade1 from '../assets/tardigrade.jpg'
-import tardigrade2 from '../assets/tardigrade1.jpg'
 
-function Gallery(){
+function Selection(){
+
     const [showGrizz, setGrizzMessage] = useState(false);
     const [showBlack, setBlackMessage] = useState(false);
     const [showPolar, setPolarMessage] = useState(false);
@@ -26,7 +12,6 @@ function Gallery(){
 
     return (
         <>
-            <h1>Bear Gallery!</h1>
             <div className="card">
                 <button onClick={() => setGrizzMessage(!showGrizz)}>
                     Brown Bear
@@ -45,16 +30,16 @@ function Gallery(){
                 </button>
             </div>
             <div>
-                {showGrizz && (<img src={grizzBear1} alt="Grizzly Bear holding fish" className="vert"/>)}
-                {showGrizz && (<img src={grizzBear2} alt="Grizzly bear sleeping"/>)}
-                {showBlack && (<img src={blackBear1} alt="Black bear in forest"/>)}
-                {showBlack && (<img src={blackBear2} alt="Black bear next to river"/>)}
-                {showPolar && (<img src={polarBear1} alt="Polar bear in snow"/>)}
-                {showPolar && (<img src={polarBear2} alt="Polar bear waving"/>)}
-                {showAndean && (<img src={andeanBear1} alt="Andean bear cubs"/>)}
-                {showAndean && (<img src={andeanBear2} alt="Andean bear eating apple"/>)}
-                {showSloth && (<img src={slothBear1} alt="Sloth bear standing" className="vert"/>)}
-                {showSloth && (<img src={slothBear2} alt="Sloth bear in forest"/>)}
+                {showGrizz && (<img src="../assets/grizzBear1.avif" alt="Grizzly Bear holding fish" className="vert"/>)}
+                {showGrizz && (<img src="../assets/grizzBear2.jpg" alt="Grizzly bear sleeping"/>)}
+                {showBlack && (<img src="../assets/blackBear1.jpeg" alt="Black bear in forest"/>)}
+                {showBlack && (<img src="../assets/blackBear2.webp" alt="Black bear next to river"/>)}
+                {showPolar && (<img src="../assets/polarBear1.jpg" alt="Polar bear in snow"/>)}
+                {showPolar && (<img src="../assets/polarBear2.webp" alt="Polar bear waving"/>)}
+                {showAndean && (<img src="../assets/andeanBear1.jpg" alt="Andean bear cubs"/>)}
+                {showAndean && (<img src="../assets/andeanBear2.jpg" alt="Andean bear eating apple"/>)}
+                {showSloth && (<img src="../assets/slothBear1.avif" alt="Sloth bear standing" className="vert"/>)}
+                {showSloth && (<img src="../assets/slothBear2.jpg" alt="Sloth bear in forest"/>)}
             </div>
             <h1>"Bear" Gallery</h1>
             <div>
@@ -66,12 +51,24 @@ function Gallery(){
                 </button>
             </div>
             <div>
-                {showKoala && (<img src={koala1} alt="Koala on tree" className="vert"/>)}
-                {showKoala && (<img src={koala2} alt="Koala looking left of camera"/>)}
-                {showTardigrade && (<img src={tardigrade1} alt="Tardigre bear"/>)}
-                {showTardigrade && (<img src={tardigrade2} alt="Tardigre bear"/>)}
+                {showKoala && (<img src="../assets/koala1.jpg" alt="Koala on tree" className="vert"/>)}
+                {showKoala && (<img src="../assets/koalaOnTree.jpg" alt="Koala looking left of camera"/>)}
+                {showTardigrade && (<img src="../assets/tardigrade.jpg" alt="Tardigrade bear"/>)}
+                {showTardigrade && (<img src="../assets/tardigrade1.jpg" alt="Tardigrade bear"/>)}
             </div>
         </>
+    )
+}
+
+function Gallery(){
+    return (
+        <div>
+            <h1>Bear Gallery!</h1>
+            <p>Yappin here</p>
+        <>
+        <Selection />
+        </>
+        </div>
     )
 }
 

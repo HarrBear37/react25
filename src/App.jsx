@@ -7,7 +7,7 @@ import {
 import styled from "styled-components";
 import './App.css'
 import Home from './components/Home/Home.jsx';
-import Gallery from './components/Gallery/Gallery.jsx';
+import Gallery from './components/Gallery/Gallery.jsx'
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
             </nav>
             <Routes>
                 <Route exact path="/" element={<Home />} >Home</Route>
-                <Route exact parh="/gallery" element={<Gallery />} >Gallery</Route>
+                <Route exact parh="/gallery" element={<Gallery />} />
             </Routes>
         </BrowserRouter>
 
