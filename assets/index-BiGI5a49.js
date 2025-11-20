@@ -15,4 +15,4 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
     & .active {
         font-weight: bold;
         color : grey;
-    }`;return F.jsx(F.Fragment,{children:F.jsxs(s1,{children:[F.jsxs("nav",{children:[F.jsx(i,{to:"/",children:"Home"}),F.jsx(i,{to:"/gallery",children:"Gallery"})]}),F.jsxs(Qg,{children:[F.jsx(Mr,{exact:!0,path:"/react25/",element:F.jsx(zp,{}),children:"Home"}),F.jsx(Mr,{exact:!0,parh:"/react25/gallery",element:F.jsx(Ap,{})})]})]})})}Wv.createRoot(document.getElementById("root")).render(F.jsx(U.StrictMode,{children:F.jsx(_p,{})}));
+    }`;return F.jsx(F.Fragment,{children:F.jsxs(s1,{children:[F.jsxs("nav",{children:[F.jsx(i,{to:"/react25/",children:"Home"}),F.jsx(i,{to:"/react25/gallery",children:"Gallery"})]}),F.jsxs(Qg,{children:[F.jsx(Mr,{exact:!0,path:"/react25/",element:F.jsx(zp,{}),children:"Home"}),F.jsx(Mr,{exact:!0,parh:"/react25/gallery",element:F.jsx(Ap,{})})]})]})})}Wv.createRoot(document.getElementById("root")).render(F.jsx(U.StrictMode,{children:F.jsx(_p,{})}));
