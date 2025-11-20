@@ -23,8 +23,8 @@ function App() {
     <>
         <BrowserRouter>
             <nav>
-                <StyledLink to={"/"}>Home</StyledLink>
-                <StyledLink to={"/gallery"}>Gallery</StyledLink>
+                <StyledLink to={"/react25/"}>Home</StyledLink>
+                <StyledLink to={"/react25/gallery"}>Gallery</StyledLink>
             </nav>
             <Routes>
                 <Route exact path="/react25/" element={<Home />} >Home</Route>
