@@ -25,9 +25,20 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+div.body{
+    background-color:#FFFFFF;
+    text-align: left;
+    padding: 3px 5px;
+    border-style:outset;
+    border-width: 3px;
+    border-color:#bfbfbf;
+    margin-block: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -42,6 +53,20 @@ img {
 }
 img.vert{
     max-width: 25%;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.text {
+    color: black;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 button {
